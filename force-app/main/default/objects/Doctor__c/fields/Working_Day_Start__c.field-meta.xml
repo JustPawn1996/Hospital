@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Working_Day_Start__c</fullName>
+    <externalId>false</externalId>
+    <formula>TIMEVALUE($CustomMetadata.Default_Workday_Setting__mdt.TimeTable_for_doctors.First_Shift_Start__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Working Day Start</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Time</type>
+</CustomField>

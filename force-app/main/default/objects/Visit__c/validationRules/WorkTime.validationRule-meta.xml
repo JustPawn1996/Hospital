@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WorkTime</fullName>
+    <active>true</active>
+    <errorConditionFormula>TIMEVALUE($CustomMetadata.Default_Workday_Setting__mdt.TimeTable_for_doctors.First_Shift_Start__c) &lt;   TIMEVALUE(StartDate__c)</errorConditionFormula>
+    <errorMessage>Wrong</errorMessage>
+</ValidationRule>
