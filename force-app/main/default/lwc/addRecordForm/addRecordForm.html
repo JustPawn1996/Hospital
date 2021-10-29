@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Create Medical Record">
+        <lightning-layout>
+            <lightning-layout-item size="6">
+                <!-- Displaying fields to get information. -->
+                <lightning-input class="slds-p-around_medium" label="Name" name="Name" 
+                    onchange={nameChangedHandler}></lightning-input>
+                <lightning-input  class="slds-p-around_medium" label="Description__c" name="Description__c" 
+                    onchange={descriptionChangedHandler}></lightning-input>
+                <br/>
+                <lightning-button class="slds-m-left_x-small" label="Create Record" variant="brand" 
+                    onclick={create}></lightning-button>
+            </lightning-layout-item>
+        </lightning-layout>
+    </lightning-card>
+</template>

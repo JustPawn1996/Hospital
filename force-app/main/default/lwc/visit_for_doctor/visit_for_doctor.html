@@ -1,0 +1,35 @@
+<template>
+        <lightning-tabset variant="scoped">
+            <lightning-tab label='Patient'>
+                    <h1 class="slds-var-p-horizontal_large">
+                        {PatientName}
+                    </h1>
+                    <div>
+                    <lightning-button label="Open Medical Card" onclick={openMedicalCard} slot="actions"></lightning-button> 
+                    </div>  
+                    <lightning-button label="Finish visit" onclick={finishVisit}></lightning-button> 
+                    <c-add-record-form strmcid={mcId}></c-add-record-form>         
+            </lightning-tab>
+            <lightning-tab label='Visits' >
+               
+            </lightning-tab>
+
+        </lightning-tabset>
+        <!-- lightning card for the content when wiredRecord has data goes here  -->
+</template> 
+<!--<template>
+    <lightning-layout>
+        <lightning-layout-item size="12">
+            <lightning-card title="Patient">
+                <h1 class="slds-var-p-horizontal_large">
+                    {PatientName}
+                </h1>
+                <div>
+                <lightning-button label="Open Medical Card" onclick={openMedicalCard} slot="actions"></lightning-button> 
+                </div>  
+                <lightning-button label="Finish visit" onclick={finishVisit}></lightning-button> 
+                <c-add-record-form strmcid={mcId}></c-add-record-form>         
+            </lightning-card>         
+        </lightning-layout-item>
+    </lightning-layout>
+</template>   -->

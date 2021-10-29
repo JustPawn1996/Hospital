@@ -1,0 +1,29 @@
+<template>  
+      
+    <lightning-card title = "My today's visit" icon-name = "custom:custom63">  
+  
+
+  
+            <template if:true = {data}>  
+                   
+  
+                    <lightning-datatable key-field="Id"  
+                                         data={data}  
+                                         columns={columns}  
+                                         hide-checkbox-column="true"   
+                                         onrowaction={callRowAction}
+                                         >  
+                    </lightning-datatable>  
+                 
+      
+            </template>  
+      
+            <template if:true = {error}>  
+  
+                {error}>  
+                  
+            </template>  
+  
+    </lightning-card>  
+  
+</template>
