@@ -29,7 +29,7 @@ public class VisitShareService {
         patientIdByDoctorId.get(visit.Doctor__r.User__c).add(visit.Patient__c);
   
                     	             
-        }
+    }
         
         // делаешь мапку доккторОВ по пациенту 
         // потом просто в форе делаешь гет  по пациенту 
@@ -60,6 +60,9 @@ public class VisitShareService {
             visitShare.RowCause = 'Manual';
             shareObjs.add(visitShare); 
         }
+
+
+        ///
         /*
         for(Id visitId : doctorIdByVisitId.keySet()){
             if(doctorIdByVisitId.get(visitId) != null){
